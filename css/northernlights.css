@@ -1,0 +1,270 @@
+/*
+Robert K. Holmes
+Summer 2020 Web Design and Development WDD121
+CRN: 12772
+Portfolio Project
+July 11, 2020
+*/
+
+body {
+  background-image: url("../images/blacksand.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  /*Originally chose 960px width because it's recommended as a common width for webpages.
+  However, the nav bar didn't line up right, so I trimmed off a couple pixels.*/
+  width: 958px;
+}
+
+#main-header h1 {
+  margin: 0;
+  line-height: 2em;
+}
+
+h2, h3 {
+  color: #01588D;
+  font-family: georgia, sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+table {
+  border: 1px solid #292929;
+  border-collapse: collapse;
+  width: 100%
+}
+
+td, th{
+  padding: 5px;
+  border: 1px solid #292929;
+}
+
+th {
+  color: #01588D;
+  font-weight: bold;
+}
+
+#main-header {
+  background-color: #181E2C;
+  color: #F5F5F5;
+  font-family: Georgia, serif;
+  /*Found this logo on designevo.com*/
+  background-image: url("../images/logo.png");
+  /*This makes the logo as large as possible without cropping or stretching.*/
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  /*Using left padding to move header to the right of logo*/
+  padding-left: 70px;
+}
+
+#navbar {
+  background-color: #6E2127;
+  line-height: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+#navbar li {
+  /*Must display inline if horizontal, block if vertical*/
+  display: inline;
+}
+
+#navbar a {
+  color: #F5F5F5;
+  /*This removes underlines from links in nav bar*/
+  text-decoration: none;
+  font-size: 18px;
+  /*This increases the area of the links. Works in conjunction with a:hover pseudoclass*/
+  padding: 14px 48px 15px 48px;
+  text-align: center;
+}
+
+#navbar a:hover {
+  /*This cool effect changes background color when hovering over a link in the nav bar*/
+  background-color: #292929;
+  transition: background-color 0.3s linear;
+}
+
+.home-banner {
+  background-image: url("../images/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*Reduced height of background image from 400px to 200px to reduce amount of user scrolling*/
+  min-height: 200px;
+}
+
+.package-banner {
+  background-image: url("../images/lights.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*Reduced height of background image from 400px to 200px to reduce amount of user scrolling*/
+  min-height: 200px;
+}
+
+.pack-banner {
+  background-image: url("../images/pack.jpg");
+  background-size: cover;
+  background-position: 0 -60px;
+  background-repeat: no-repeat;
+  /*Reduced height of background image from 400px to 200px to reduce amount of user scrolling*/
+  min-height: 200px;
+}
+
+.about-banner {
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  /*background-position: 0 -60px;*/
+  background-repeat: no-repeat;
+  /*Reduced height of background image from 400px to 200px to reduce amount of user scrolling*/
+  min-height: 200px;
+}
+
+.contact-banner {
+  background-image: url("../images/cabin.jpg");
+  background-size: cover;
+  /*background-position: 0 -60px;*/
+  background-repeat: no-repeat;
+  /*Reduced height of background image from 400px to 200px to reduce amount of user scrolling*/
+  min-height: 200px;
+}
+
+#container {
+  /*Chose to display as table so that the height of main section and sidebar are equal
+  and footer is pushed below both.*/
+  display: table;
+  background-color: #F5F5F5;
+  padding: 0px 20px 0px 20px;
+  box-sizing: border-box;
+}
+
+form {
+  text-align: left;
+  padding: 20px 70px 20px 70px;
+  margin: 20px;
+  background-color: #DCDCDC;
+  color: #292929;
+  font-weight: bold;
+}
+
+#contactmain {
+  color: #292929;
+  width: 40%;
+
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  float: left;
+  font-family: georgia, sans-serif;
+}
+
+#contactform {
+  background-color: #F5F5F5;
+  color: black;
+  width: 60%;
+  padding: 0;
+  box-sizing: border-box;
+  float: right;
+}
+
+#main {
+  color: #292929;
+  width: 70%;
+
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  float: left;
+  font-family: georgia, sans-serif;
+}
+
+#main dt {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  color: #01588D;
+}
+
+#main ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  background-color: #F5F5F5;
+  color: black;
+  width: 30%;
+  padding: 0;
+  box-sizing: border-box;
+  float: right;
+}
+
+figure {
+  margin: 10px;
+}
+
+#footer {
+  background-color: #181E2C;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 0.6em;
+  margin: 0;
+  overflow: hidden;
+}
+
+#footer a {
+  /*Changed the color because default blue was jarring, not good contrast, bad for accessibility*/
+  color: white;
+}
+
+/*This is how the page will display for smaller screens (e.g. tablets and phones)*/
+@media only screen and (max-width: 958px) {
+  * {
+    margin: 0;
+  }
+
+  #navbar li {
+    display: block;
+  }
+
+  /*Nav bar links should collapse vertically on small screen*/
+  #navbar a {
+    display: block;
+    border: 1px solid #292929;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /*Taking out floats so that sidebar collapses under main content when viewed on small screen*/
+  #main {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  #contactmain {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  #contactform {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}

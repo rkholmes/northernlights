@@ -1,0 +1,93 @@
+<!--
+Robert K. Holmes
+Summer 2020 Web Design and Development WDD121
+CRN: 12772
+Portfolio Project
+July 11, 2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--Words after double colons denotes which page we're on-->
+    <title>Northern Lights :: Travel Packages</title>
+    <link rel="stylesheet" href="css/northernlights.css">
+  </head>
+  <body>
+    <header id="main-header">
+        <h1>Northern Lights Travel Agency</h1>
+    </header>
+    <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Vacation Packages</a></li>
+          <li><a href="pack.html">Things to Pack</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--This is the big image at the top, similar to hero image.-->
+    <div class="package-banner">
+    </div>
+
+    <!--Container section "contains" main content area and sidebar-->
+    <section id="container">
+
+      <!--This is the main content area to the left of the sidebar-->
+      <div id="main">
+          <h2>Vacation Packages</h2>
+
+          <!--Below are descriptions of vacation packages, each containing a list of amenities-->
+          <dl>
+            <dt>Arctic Cruise</dt>
+            <dd>Enjoy a luxury cruise through the Arctic Ocean along the coast of Norway. (It’s warmer than you’d think!)
+            <ul>
+              <li>See towns of Tromso, Hornvika, Skarsvag, and Oslo!</li>
+              <li>Nightly entertainment, including comedy, live music, and trivia!</li>
+            </ul>
+            </dd>
+            <dt>Icelandic Spa</dt>
+            <dd>Marvel at the northern lights and indulge in a thermal spa at The Blue Lagoon.
+              <ul>
+                <li>Unforgettable cuisine featuring Scandinavian favorites</li>
+                <li>Golf course access included</li>
+                <li>Honeymoon packages available</li>
+              </ul>
+            </dd>
+            <dt>Norwegian Retreat</dt>
+            <dd>See breathtaking landscapes as you hike cabin-to-cabin on a guided wildlife tour through the Norwegian wilderness.
+              <ul>
+                <li>Low light pollution. Stargaze under stunningly clear skies!</li>
+                <li>Great for all experience levels, from beginning to advanced hikers.</li>
+              </ul>
+            </dd>
+            <dt>Swedish History</dt>
+            <dd>Enjoy guided tours through Stockholm’s Vasa Museum and medieval architectural marvels in Old Town.
+              <ul>
+                <li>Stay at a charming bed and breakfast with plentiful amenities</li>
+                <li>Celebrate music at the Swedish Music Hall of Fame, home to the ABBA Museum!</li>
+                <li>Daily boat tours included</li>
+              </ul>
+            </dd>
+          </dl>
+      </div>
+
+      <!--This is the sidebar on the right of the main content area.-->
+      <aside id="sidebar">
+        <figure><img src="images/spa.jpg" width="267" alt="Blue Lagoon Spa - for educational purposes only"><figcaption>Blue Lagoon Spa, Iceland</figcaption></figure>
+        <figure><img src="images/valley.jpg" width="267" alt="Aurlandsdalen Valley - for educational purposes only"><figcaption>Aurlandsdalen Valley, Norway</figcaption></figure>
+        <figure><img src="images/vasa.jpg" width="267" alt="Vasa Museum Warship - for educational purposes only"><figcaption>18th Century Warship at Vasa Museum, Sweden</figcaption></figure>
+      </aside>
+    </section>
+    <footer id="footer">
+      Copyright &copy; 2020 Nordic Lights Travel Agency<br>
+      <a href="mailto:Robert@Holmes.com">Robert@Holmes.com</a>
+    </footer>
+    <a href="http://users.skynet.be/mgueury/mozilla/">
+    <img src="http://users.skynet.be/mgueury/mozilla/tidy_32.gif"
+    alt="Validated by HTML Validator (based on Tidy) " height="32" width="78"/>
+    </a>
+  </body>
+</html>

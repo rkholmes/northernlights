@@ -1,0 +1,71 @@
+<!--
+Robert K. Holmes
+Summer 2020 Web Design and Development WDD121
+CRN: 12772
+Portfolio Project
+July 11, 2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Northern Lights :: Contact Us</title>
+    <link rel="stylesheet" href="css/northernlights.css">
+  </head>
+  <body>
+    <header id="main-header">
+        <h1>Northern Lights Travel Agency</h1>
+    </header>
+    <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Vacation Packages</a></li>
+          <li><a href="pack.html">Things to Pack</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!--This is the big image at the top, similar to hero image.-->
+      <div class="contact-banner">
+      </div>
+
+      <!--Container section "contains" main content area and sidebar-->
+      <section id="container">
+
+        <div id="contactmain">
+
+          <h2>Contact Us</h2>
+
+          <p>Please don’t hesitate to contact us for more details regarding our pricing and availability by using the form to the right. Jan and Erika believe that planning your vacation should <u><i><b>not</b></i></u> be stressful, so they are happy to help. One of them will personally reply to you within 48 hours.</p>
+
+        </div>
+
+        <aside id="contactform">
+
+          <form method="post" action="#">
+            <label for="name"> Your Name (required): </label> <br> <input type="text" name="name" id="name" size="50" required tabindex="1"> <br><br>
+            <label for="email"> Your Email Address (required): </label> <br> <input type="email" name="email" id="email" size="50" required tabindex="2"> <br><br>
+            <label for="phone"> Your Phone Number: </label> <br> <input type="tel" name="phone" id="phone" size="50" tabindex="3"> <br><br>
+            <label for="subject"> Subject: </label> <br> <input type="text" name="subject" id="subject" size="50" tabindex="4"> <br><br>
+            <label for="message"> Your Message: </label> <br>
+            <textarea name="comments" id="myComments" rows="10" cols="52" tabindex="5" required></textarea> <br><br>
+            <input type="submit" value="Submit" id="mySubmit" tabindex="6">
+          </form>
+
+      </aside>
+
+
+      </section>
+      <footer id="footer">
+        Copyright &copy; 2020 Nordic Lights Travel Agency<br>
+        <a href="mailto:Robert@Holmes.com">Robert@Holmes.com</a>
+      </footer>
+    <!--HTML validation image. Remember to validate after any updates!-->
+    <a href="http://users.skynet.be/mgueury/mozilla/">
+    <img src="http://users.skynet.be/mgueury/mozilla/tidy_32.gif"
+    alt="Validated by HTML Validator (based on Tidy) " height="32" width="78"/>
+    </a>
+  </body>
+</html>
